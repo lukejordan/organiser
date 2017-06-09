@@ -13,15 +13,13 @@ import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 
-import org.lukeyj.organiser.entity.Organiser;
-
 public class FilePersistence {
 
 	
 	void save(Object oersistableObject, String fileName, String folderPath) {
-		// TODO Auto-generated method stub
+
 		//this.organiser = organiser;
-		String FULL_FILE_PATH = folderPath + "\\" + fileName;
+		String FULL_FILE_PATH = folderPath + "/" + fileName;
 		
 		File file = new File(FULL_FILE_PATH);
 		File folder = new File(folderPath);
